@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(213, 235, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 370px;
+    height: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.box1{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 7px;
+    padding: 40px 100px 40px 40px;
+}
+
+.box2 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: hsl(179, 79%, 38%);
+    border-bottom-left-radius: 7px;
+    padding: 30px 40px 40px 40px;
+}
+
+.box3 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #037575;
+    border-bottom-right-radius: 7px;
+    padding: 30px 120px 40px 40px;
+}
+
+.box1 h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+ .box1 h2 {
+    color: hsl(179, 75%, 48%);
+}
+
+.box1 p {
+    color: #bbc0ca;
+}
+
+.box2 span, h3 {
+    color: white;
+}
+
+.price{
+    color: white;
+}
+
+
+button {
+    width: 270px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: hsl(71, 100%, 36%);
+    height: 37px;
+}
+
+.box3 p {
+    color: white;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+}
+
+.per {
+    margin-left: 20px;
+    font-size: 13px;
+    margin-top: 12px;
+    color: #ffffffda;
+}
+
+.large {
+    font-size: 27px;
+}
+
+
+
+@media screen and (max-width:370px) {
+    body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        background-color: hsl(204, 43%, 93%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 280px 280px 280px;
+        padding: 40px;
+    }
+    
+    .box1 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: white;
+        padding: 20px;
+    }
+    
+    .box2 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: hsl(179, 62%, 43%);
+        padding: 20px;
+        border-radius: 0px;
+    }
+    
+    .box3 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: #4abdbd;
+        padding: 20px 70px 20px 20px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    button {
+       margin-left: -6px;
+    }
+
+    .box3 p {
+        margin-top: -20px;
+    }
+
+
+}
